@@ -1,33 +1,6 @@
 const fs = require("fs-extra");
 const readline = require("readline");
 
-// TODO: Format it directly from text file
-/*
- 
-[M] [H]         [N]                
-[S] [W]         [F]     [W] [V]    
-[J] [J]         [B]     [S] [B] [F]
-[L] [F] [G]     [C]     [L] [N] [N]
-[V] [Z] [D]     [P] [W] [G] [F] [Z]
-[F] [D] [C] [S] [W] [M] [N] [H] [H]
-[N] [N] [R] [B] [Z] [R] [T] [T] [M]
-[R] [P] [W] [N] [M] [P] [R] [Q] [L]
- 1   2   3   4   5   6   7   8   9 
-
- */
-
-const initialStack = [
-  ['M', 'S', 'J', 'L', 'V', 'F', 'N', 'R'],
-  ['H', 'W', 'J', 'F', 'Z', 'D', 'N', 'P'],
-  ['G', 'D', 'C', 'R', 'W'],
-  ['S', 'B', 'N'],
-  ['N', 'F', 'B', 'C', 'P', 'W', 'Z', 'M'],
-  ['W', 'M', 'R', 'P'],
-  ['W', 'S', 'L', 'G', 'N', 'T', 'R'],
-  ['V', 'B', 'N', 'F', 'H', 'T', 'Q'],
-  ['F', 'N', 'Z', 'H', 'M', 'L']
-];
-
 const initializeList = (line, listToFill) => {
   const wellFormattedList = [];
 
